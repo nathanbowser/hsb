@@ -1,0 +1,30 @@
+School Name,ULCS No.,ID,Geospatial C,Inspection Date,Report Date,Location (Room/Area),Finding/Observation,Issue/Hazard/Contaminant Category,Priority Code,Frequency,Closure Category,Recommended Corrective Action[s],,Responsibility,Notes,Status - Deficient Condition,"Date of
+Update",Location Closed?,Projected Start Date,Projected End Date
+Baldi,8160,1,"40.091939, -75.051826",06.01.2013,06.20.2013,HVAC-Digital Control Room,HVAC System Sensors Inoperable -. ,HVAC,1," P
+
+",3,"[1] Evaluate the HVAC digital control system and outdoor air temperature sensor.
+[2] The system should be adjusted or repaired to maintain comfortable interior temperatures and an adequate amount of outdoor air.",,"School Staff/B.E.
+FMS-Central Maint.
+CPO
+OEMS
+Multi","The Building Engineer indicated the outdoor temperature sensor reads 65.5°F all year.  During the winter months, he manually disconnects the outdoor dampers to help maintain temperature within the building",Open,06.20.2013,No,07.01.2013,07.03.2013
+Baldi,8160,2,"40.091939, -75.051826",06.01.2013,06.20.2013,Art Room A/B,Flaking paint was observed on the walls and overhead concrete beams.,Lead Paint,4,R,2,[1] Remove the flaking paint from this room and repaint.,,"School Staff/B.E.
+FMS-Central Maint.
+CPO
+OEMS
+Multi",,Open,06.20.2013,No,07.01.2013,
+Baldi,8160,3,"40.091939, -75.051826",06.01.2013,06.20.2013,Blue Cafeteria,Flaking paint was observed on the upper wall sections and concrete beams.  ,Lead Paint,4,R,2,Remove the flaking paint from this room and repaint.,,"School Staff/B.E.
+FMS-Central Maint.
+CPO
+OEMS
+Multi",The highest point of flaking paint was approximately 20 feet from the floor.,Open,06.20.2013,No,07.01.2013,
+Baldi,8160,4,"40.091939, -75.051826",06.01.2013,06.20.2013,Nurse's Office,Mold growth was observed on the lower section of the block wall in the corner and adjacent to the IT network closet.  Mold growth was also reported on the community room walls adjacent to the IT network closet and was cleaned by the Building Engineer. ,Mold,1,I,2,Clean mold growth from the section of wall in the Nurse's office with a detergent solution.,,"School Staff/B.E.
+FMS-Central Maint.
+CPO
+OEMS
+Multi",,Closed,06.20.2013,No,07.01.2013,
+Baldi,8160,5,"40.091939, -75.051826",06.01.2013,06.20.2013,Classroom Windows - Throughout School,The staff reported that many classrooms do not have at least one operable window. Maintenance reported 200 balancers are being replaced.,Air Quality - General,5,O,2,Conduct assessment of the classroom windows.  Each classroom should have at least one operable window.  Issue work orders as needed for the repair.,,"School Staff/B.E.
+FMS-Central Maint.
+CPO
+OEMS
+Multi",,Closed,06.20.2013,No,07.01.2013,

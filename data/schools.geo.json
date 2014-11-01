@@ -1,0 +1,260 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 86,
+        "facil_id": "1230",
+        "instit_id": "123",
+        "facil_name": "Bryant, William Cullen",
+        "marker-size": "large"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.243686,
+          39.952946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 131,
+        "facil_id": "4480",
+        "instit_id": "448",
+        "facil_name": "Overbrook Educational Center",
+        "marker-size": "large"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.254807,
+          39.973823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 78,
+        "facil_id": "7110",
+        "instit_id": "711",
+        "facil_name": "Harding, Warren G.",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.07437,
+          40.012785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 216,
+        "facil_id": "6310",
+        "instit_id": "631",
+        "facil_name": "McCloskey, John F.",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.174842,
+          40.081104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 102,
+        "facil_id": "2340",
+        "instit_id": "234",
+        "facil_name": "McCall, General George A.",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.152597,
+          39.944528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 57,
+        "facil_id": "5590",
+        "instit_id": "559",
+        "facil_name": "Webster, John H.",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.105178,
+          39.996242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 127,
+        "facil_id": "2370",
+        "instit_id": "237",
+        "facil_name": "McDaniel, Delaplaine",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.181224,
+          39.929379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 10,
+        "facil_id": "7330",
+        "instit_id": "733",
+        "facil_name": "Lawton, Henry W.",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.058585,
+          40.020256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 135,
+        "facil_id": "8140",
+        "instit_id": "814",
+        "facil_name": "Meehan, Austin",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.044297,
+          40.045799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 158,
+        "facil_id": "8310",
+        "instit_id": "831",
+        "facil_name": "Moore, J. Hampton",
+        "marker-size": "large"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.076965,
+          40.049174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 93,
+        "facil_id": "8160",
+        "instit_id": "816",
+        "facil_name": "Baldi, C. C. A.",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.052527,
+          40.091245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 122,
+        "facil_id": "1490",
+        "instit_id": "149",
+        "facil_name": "Blankenburg, Rudolph",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.215151,
+          39.972537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 208,
+        "facil_id": "6380",
+        "instit_id": "638",
+        "facil_name": "Shawmont",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.238644,
+          40.051585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 223,
+        "facil_id": "6410",
+        "instit_id": "641",
+        "facil_name": "Cook-Wissahickon",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.207023,
+          40.022593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "objectid": 26,
+        "facil_id": "2520",
+        "instit_id": "252",
+        "facil_name": "Jenks, Abram",
+        "marker-size": "large"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.168345,
+          39.918877
+        ]
+      }
+    }
+  ]
+}
