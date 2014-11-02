@@ -143,7 +143,7 @@
                .attr('r', function (d) { return radius(d.properties.deficiencies) })
                .attr('transform', function (d) { return 'translate(' + path.centroid(d) + ')' })
                .on('click', function (d) {
-                 window.location = '/school/' + d.properties['ULCS No.']
+                 window.location = 'school/' + d.properties['ULCS No.']
                })
                .on('mouseover', function (d) {
                 console.log(d3.event)
