@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Healthy School Buildings</title>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <style type="text/css">
+
+    .neighborhoods path {
+      stroke: #fff;
+      stroke-width: .5px;
+      stroke-opacity: .5;
+      fill: #81abce;
+    }
+
+    circle.school {
+      fill: steelblue;
+      fill-opacity: .8;
+      stroke: #fff;
+    }
+
+    div.tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 20px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 0px;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<style type="text/css">
 
-.neighborhoods path {
-  stroke: #fff;
-  stroke-width: .5px;
-  stroke-opacity: .5;
-  fill: #81abce;
-}
+  <header>
 
-circle.school {
-  fill: steelblue;
-  fill-opacity: .8;
-  stroke: #fff;
-}
+  </header>
 
-</style>
-<div id="map"></div>
+  <h1>Healthy School Buildings</h1>
 
+  <div id="map"></div>
+
+</body>
 <script>
-  function handler (data) {
-    alert(Object.keys(data.properties).map(String))
+  function tooltip (d) {
+    return d.properties['School Name'] + ' has ' + d.properties.deficiencies + ' deficiencies.' +
+          '<br>Click to see details.'
   }
 
   var margin = { top: 0, right: 0, bottom: 0, left: 0 }
     , width = 960 - margin.right - margin.left
-    , height = 1000
+    , height = 600
     , projection = d3.geo.mercator()
                          .center([-75.12, 40])
                          .scale(80000)
@@ -38,6 +62,11 @@ circle.school {
     var radius = d3.scale.sqrt()
         .domain([0, 20])
         .range([0, 20])
+
+    var div = d3.select('body')
+                .append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0)
 
     // draw philly
     d3.json('data/philly.geo.json', function (json) {
@@ -64,10 +93,26 @@ circle.school {
                .attr('class', 'school')
                .attr('r', function (d) { return radius(d.properties.deficiencies) })
                .attr('transform', function (d) { return 'translate(' + path.centroid(d) + ')' })
-               .on('click', handler)
-               .append('title')
-                 .text(function (d) { return d.properties['School Name']})
-
+               .on('click', function (d) {
+                 window.location = '/school/' + d.properties['ULCS No.']
+               })
+               .on('mouseover', function (d) {
+                console.log(d3.event)
+                div.transition()
+                   .duration(500)
+                   .style('opacity', 0)
+                div.transition()
+                   .duration(200)
+                   .style('opacity', .9)
+                div.html(tooltip(d))
+                   .style('left', d3.event.offsetX + 'px')
+                   .style('top', (d3.event.offsetY - 28) + 'px')
+               })
+               .on('mouseout', function (d) {
+                 div.transition()
+                    .duration(500)
+                    .style('opacity', 0)
+               })
       })
     })
 
