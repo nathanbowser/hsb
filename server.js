@@ -42,6 +42,6 @@ function ready () {
   router.addRoute('/index.html', index)
   router.addRoute('/', index)
 
-  http.createServer(router).listen(8080)
+  http.createServer(router).listen(process.env.PORT || 8080)
 
 }
