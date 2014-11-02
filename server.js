@@ -1,7 +1,9 @@
 var Router = require('routes-router')
   , http = require('http')
   , fs = require('fs')
+  , hyperstream = require('hyperstream')
   , Schools = require('./lib/schools')
+  , render = require('./lib/render')
   , Dat = require('dat')
   , dat = Dat(ready)
 
@@ -18,15 +20,23 @@ function ready () {
   })
 
   router.addRoute('/style.css', function (req, res) {
-    fs.createReadStream(__dirname + '/style.css').pipe(res)
+    res.setHeader('content-type', 'text/css')
+    fs.createReadStream(__dirname + '/static/style.css').pipe(res)
   })
 
   router.addRoute('/school/:id', function (req, res, opts) {
-    schools.get(opts.params.id).pipe(res)
+    res.setHeader('content-type', 'text/html')
+
+    var rs = fs.createReadStream(__dirname + '/static/school.html')
+      , hs = hyperstream({
+               '.deficiencies': schools.get(opts.params.id).pipe(render())
+             })
+
+    rs.pipe(hs).pipe(res)
   })
 
   function index (req, res) {
-    fs.createReadStream(__dirname + '/index.html').pipe(res)
+    fs.createReadStream(__dirname + '/static/index.html').pipe(res)
   }
 
   router.addRoute('/index.html', index)
