@@ -25,8 +25,21 @@ h1, h2 {
   text-rendering: optimizeLegibility;
 }
 
+p {
+  line-height: 1.5em;
+  width: 720px;
+}
+
 #map {
   width: 960px;
   height: 500px;
   border: 1px solid #DEDEDE;
+}
+
+aside {
+  font-size: small;
+  left: 780px;
+  position: absolute;
+  text-align: right;
+  width: 180px;
 }

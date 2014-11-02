@@ -30,6 +30,10 @@
       border-radius: 8px;
     }
 
+    label, span {
+      font-size: 18px;
+    }
+
   </style>
 </head>
 <body>
@@ -41,6 +45,23 @@
   <h1>Healthy School Buildings</h1>
 
   <div id="map"></div>
+
+  <aside>
+    <div>
+      <label>Total deficiencies</label>
+      <span id="total-deficiencies"></span>
+    </div>
+    <div>
+      <label>Total open</label>
+      <span id="total-open"></span>
+    </div>
+  </aside>
+  <div>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+
+  </div>
 
 </body>
 <script>
@@ -85,6 +106,16 @@
 
       // draw the schools...
       d3.json('data/schools.geo.json', function (schools) {
+        // Determine total deficiences
+        var totals = schools.reduce(function (p, c) {
+          p.total += c.properties.deficiencies
+          p.open += c.properties.deficiencies // TODO Determine open?
+          return p
+        }, {total: 0, open: 0})
+
+        document.getElementById('total-deficiencies').innerHTML = totals.total
+        document.getElementById('total-open').innerHTML = totals.open
+
         var schools = map.selectAll('circle.school')
                          .data(schools)
 
