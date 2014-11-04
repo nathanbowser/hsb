@@ -13,7 +13,7 @@
     "url": "https://github.com/nathanbowser/philly-schools/issues"
   },
   "scripts": {
-    "import": "dat import data/hsb.csv --csv --primary=ID"
+    "import": "dat import data/ieq-with-coords.csv --csv"
   },
   "homepage": "https://github.com/nathanbowser/philly-schools",
   "dependencies": {

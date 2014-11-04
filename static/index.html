@@ -84,7 +84,7 @@
 </body>
 <script>
   function tooltip (d) {
-    return d.properties['School Name'] + ' has ' + d.properties.deficiencies + ' deficiencies.' +
+    return d.properties['Location'] + ' has ' + d.properties.deficiencies + ' deficiencies.' +
           '<br>Click to see details.'
   }
 
@@ -146,7 +146,6 @@
                  window.location = 'school/' + d.properties['ULCS No.']
                })
                .on('mouseover', function (d) {
-                console.log(d3.event)
                 div.transition()
                    .duration(500)
                    .style('opacity', 0)
