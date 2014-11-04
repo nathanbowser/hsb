@@ -25,6 +25,7 @@ coords(function (locations) {
          return data
        }
 
+       data.push('')
        data.push(locations[data[1]] || '')
        return data
    })
@@ -32,7 +33,6 @@ coords(function (locations) {
       return row[row.length - 1]
    })
    .on('data-invalid', function (r) {
-     // console.log('r is invalid', r)
      unknowns[r[0]] = r[1]
    })
    .pipe(csv.createWriteStream({headers: true}))
